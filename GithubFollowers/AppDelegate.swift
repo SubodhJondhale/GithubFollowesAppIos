@@ -2,12 +2,13 @@
 //  AppDelegate.swift
 //  GithubFollowers
 //
-//  Created by Ram Jondhale on 18/05/24.
+//  Created by Subodh Jondhale on 18/05/24.
 //
+
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
