@@ -4,8 +4,6 @@
 //
 //  Created by Subodh Jondhale on 18/05/24.
 //
-
-
 import UIKit
 
 class GFTextField: UITextField {
@@ -37,6 +35,7 @@ class GFTextField: UITextField {
         
         backgroundColor             = .tertiarySystemBackground
         autocorrectionType          = .no
+        returnKeyType               = .go
         placeholder                 = "Enter a username"
     }
 }
