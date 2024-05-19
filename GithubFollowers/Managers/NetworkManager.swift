@@ -5,6 +5,7 @@
 //  Created by Subodh Jondhale on 18/05/24.
 //
 
+
 import Foundation
 
 class NetworkManager {
@@ -30,7 +31,7 @@ class NetworkManager {
             }
             
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.unableToComplete))
+                completed(.failure(.invalidResponse))
                 return
             }
             
