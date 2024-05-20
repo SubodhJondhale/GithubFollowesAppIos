@@ -1,14 +1,13 @@
 //
-//  GFButton.swift
+//  GFSecondaryTitleLabel.swift
 //  GithubFollowers
 //
 //  Created by Subodh Jondhale on 18/05/24.
 //
 
-
 import UIKit
 
-class GFButton: UIButton {
+class GFSecondaryTitleLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,18 +20,18 @@ class GFButton: UIButton {
     }
     
     
-    init(backgroundColor: UIColor, title: String) {
+    init(fontSize: CGFloat) {
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        self.setTitle(title, for: .normal)
+        font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
         configure()
     }
     
     
     private func configure() {
-        layer.cornerRadius      = 10
-        setTitleColor(.white, for: .normal)
-        titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline)
+        textColor                   = .secondaryLabel
+        adjustsFontSizeToFitWidth   = true
+        minimumScaleFactor          = 0.90
+        lineBreakMode               = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
