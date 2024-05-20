@@ -1,8 +1,9 @@
 //
 //  GFItemInfoVC.swift
-//  GithubFollowers
+//  GHFollowers
 //
-//  Created by Subodh Jondhale on 18/05/24.
+//  Created by Sean Allen on 1/24/20.
+//  Copyright © 2020 Sean Allen. All rights reserved.
 //
 
 import UIKit
@@ -15,6 +16,7 @@ class GFItemInfoVC: UIViewController {
     let actionButton    = GFButton()
     
     var user: User!
+    weak var delegate: UserInfoVCDelegate!
     
     
     init(user: User) {
@@ -31,6 +33,7 @@ class GFItemInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureBackgroundView()
+        configureActionButton()
         layoutUI()
         configureStackView()
     }
@@ -49,6 +52,14 @@ class GFItemInfoVC: UIViewController {
         stackView.addArrangedSubview(itemInfoViewOne)
         stackView.addArrangedSubview(itemInfoViewTwo)
     }
+    
+    
+    private func configureActionButton() {
+        actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+    }
+    
+    
+    @objc func actionButtonTapped() {}
     
     
     private func layoutUI() {
