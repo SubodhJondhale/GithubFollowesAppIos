@@ -5,7 +5,6 @@
 //  Created by Subodh Jondhale on 18/05/24.
 //
 
-
 import UIKit
 
 class GFButton: UIButton {
@@ -34,5 +33,11 @@ class GFButton: UIButton {
         setTitleColor(.white, for: .normal)
         titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    
+    func set(backgroundColor: UIColor, title: String) {
+        self.backgroundColor = backgroundColor
+        setTitle(title, for: .normal)
     }
 }

@@ -1,22 +1,23 @@
 //
 //  User.swift
-//  GithubFollowers
+//  GHFollowers
 //
-//  Created by Subodh Jondhale on 18/05/24.
+//  Created by Sean Allen on 1/1/20.
+//  Copyright © 2020 Sean Allen. All rights reserved.
 //
 
 import Foundation
 
 struct User: Codable {
-    var login: String
-    var avatarUrl: String
+    let login: String
+    let avatarUrl: String
     var name: String?
     var location: String?
     var bio: String?
-    var publicRepos: Int
-    var publicGists: Int
-    var htmlUrl: String
-    var following: Int
-    var followers: Int
-    var createdAt: String
+    let publicRepos: Int
+    let publicGists: Int
+    let htmlUrl: String
+    let following: Int
+    let followers: Int
+    let createdAt: String
 }
