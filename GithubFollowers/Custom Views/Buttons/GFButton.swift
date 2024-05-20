@@ -1,14 +1,13 @@
 //
-//  GFTitleLabel.swift
+//  GFButton.swift
 //  GithubFollowers
 //
 //  Created by Subodh Jondhale on 18/05/24.
 //
 
-
 import UIKit
 
-class GFTitleLabel: UILabel {
+class GFButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,19 +20,18 @@ class GFTitleLabel: UILabel {
     }
     
     
-    init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
+    init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero)
-        self.textAlignment = textAlignment
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+        self.backgroundColor = backgroundColor
+        self.setTitle(title, for: .normal)
         configure()
     }
     
     
     private func configure() {
-        textColor                   = .label
-        adjustsFontSizeToFitWidth   = true
-        minimumScaleFactor          = 0.9
-        lineBreakMode               = .byTruncatingTail
+        layer.cornerRadius      = 10
+        setTitleColor(.white, for: .normal)
+        titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
