@@ -3,9 +3,7 @@
 //  GithubFollowers
 //
 //  Created by Subodh Jondhale on 18/05/24.
-//
-
-import UIKit
+//import UIKit
 
 enum ItemInfoType {
     case repos, gists, followers, following

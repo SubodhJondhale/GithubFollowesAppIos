@@ -3,9 +3,7 @@
 //  GithubFollowers
 //
 //  Created by Subodh Jondhale on 18/05/24.
-//
-
-import UIKit
+//import UIKit
 
 class GFFollowerItemVC: GFItemInfoVC {
     
@@ -19,5 +17,10 @@ class GFFollowerItemVC: GFItemInfoVC {
         itemInfoViewOne.set(itemInfoType: .followers, withCount: user.followers)
         itemInfoViewTwo.set(itemInfoType: .following, withCount: user.following)
         actionButton.set(backgroundColor: .systemGreen, title: "Get Followers")
+    }
+    
+    
+    override func actionButtonTapped() {
+        delegate.didTapGetFollowers(for: user)
     }
 }

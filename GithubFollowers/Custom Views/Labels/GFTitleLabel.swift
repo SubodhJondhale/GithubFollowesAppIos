@@ -4,8 +4,6 @@
 //
 //  Created by Subodh Jondhale on 18/05/24.
 //
-
-
 import UIKit
 
 class GFTitleLabel: UILabel {

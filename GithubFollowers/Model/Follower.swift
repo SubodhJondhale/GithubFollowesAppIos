@@ -1,11 +1,9 @@
 //
 //  Follower.swift
-//  GHFollowers
+//  GithubFollowers
 //
-//  Created by Sean Allen on 1/1/20.
-//  Copyright © 2020 Sean Allen. All rights reserved.
+//  Created by Subodh Jondhale on 18/05/24.
 //
-
 import Foundation
 
 struct Follower: Codable, Hashable {
