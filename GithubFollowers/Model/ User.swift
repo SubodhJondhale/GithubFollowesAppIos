@@ -1,9 +1,10 @@
 //
-//  User.swift
+//   User.swift
 //  GithubFollowers
 //
-//  Created by Subodh Jondhale on 18/05/24.
+//  Created by Subodh Jondhale on 24/05/24.
 //
+
 import Foundation
 
 struct User: Codable {
@@ -19,3 +20,4 @@ struct User: Codable {
     let followers: Int
     let createdAt: String
 }
+

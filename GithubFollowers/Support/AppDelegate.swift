@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
+//  AppDelegate.swift/Users/ramjondhale/Downloads/39-GHFollowers/GHFollowers/Support/Assets.xcassets
 //  GithubFollowers
 //
-//  Created by Subodh Jondhale on 18/05/24.
+//  Created by Subodh Jondhale on 24/05/24.
 //
 
 import UIKit
@@ -33,4 +33,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 
